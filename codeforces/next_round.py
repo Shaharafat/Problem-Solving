@@ -7,9 +7,10 @@ def calculate(first_line_input, second_line_input):
     k = int(k)
     next_round_participants_count = 0
 
+    # Convert all items to integer
     scores = [int(x) for x in scores]
 
-    place_value = scores[k - 1]
+    place_value = int(scores[k - 1])
 
     for i in range(0, len(scores)):
         if scores[i] > place_value and scores[i] > 0:
