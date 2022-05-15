@@ -4,21 +4,15 @@ def migratoryBirds(arr:list[int]):
 
   lower_index = max(arr)
 
-  # def set_max_sightings(item,max_sightings):
-  #     if table[item] > max_sightings:
-  #       max_sightings = table[item]
-  print(table) 
   for idx,item in enumerate(arr):
     table[item] += 1 
     if table[item] > max_sightings: max_sightings = table[item]
-
 
   for (key,value) in table.items():
     if value == max_sightings :
       lower_index = key
       break
 
-  print(max_sightings, lower_index)
   return lower_index
 
 migratoryBirds([1,4,4,4,5,3])
