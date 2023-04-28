@@ -51,3 +51,9 @@ s.addTwoNumbers(
 #     ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, None)))))),
 #     ListNode(5, ListNode(6, ListNode(4, None))),
 # )
+tests = [
+    (
+        ([2,4,3],[5,6,4]),
+        ([7,0,8]),
+    )
+]
